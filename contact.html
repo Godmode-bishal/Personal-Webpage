@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Bishal Mazumdar</title>
+        <link rel="icon" type="image/png" href="image/logo.png">
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    	<link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+         var myLatLng = {lat: 24.7574, lng: 92.7854};
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(24.7574,92.7854),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+window.addEventListener("load", function(){
+  var load_screen = document.getElementById("load_screen");
+  document.body.removeChild(load_screen);
+});
+</script>
+
+    
+	</head>
+
+	<body style="background-color: #fff;">
+    <div id="load_screen"><div id="loading"><img src="image/721.gif"></div></div>
+
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bishal Mazumdar</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                    <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-phone"aria-hidden="true"></span>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>       
+
+        <div class="container fadeInDown animated">
+        
+        <div class="row row-content">
+           <div class="col-xs-12">
+              <h3><strong>Location Information</strong></h3> 
+           </div>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+              <h5><strong>The Road not taken</strong></h5>
+                   <div class="well" style="border: 2px solid black;">
+                    <blockquote>
+                        <p>I shall be telling this with a sigh<br>Somewhere ages and ages hence:<br>Two roads diverged in a wood, and I—<br>I took the one less traveled by,<br>And that has made all the difference.</p>
+                        <footer>Robert Frost.
+                        </footer>
+                    </blockquote>
+                </div>
+                    
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                <h5><strong>Map of my Residence</strong></h5>
+                <div id="map"></div>
+            </div>
+            
+        </div>
+
+        <div class="row row-content" id="contactMe">
+           <div class="col-xs-12">
+              <h3><strong>Send me your Feedback</strong></h3> 
+           </div>
+            <div class="col-xs-12 col-sm-9">
+                <form method="post" action="form-to-email.php" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-2 control-label">First Name</label>                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailid" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email" required>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn" style="background-color: #000;color: #fff;">Send Feedback</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div>
+
+    </div>
+
+        
+<footer class="row-footer" style="border-top: 1px solid white;">
+            <div class="container">
+<div class="row">
+    <div class="col-xs-6 col-sm-5">
+                    <h5 style="color: white;">My Address</h5>
+                    <address>
+                     Boys Hostel-2<br>
+                    National Institute of Technology<br>
+                    Silchar, Cachar<br>
+                    Assam, India<br>
+                    Pin Code: 788010
+                   </address>
+                </div>
+                <div class="text-center col-md-4" >
+                    <div class="nav navbar-nav center-block" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/+BishalMazumdar" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/bishal.mazumdar.35" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/mazumdarbishal/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://in.linkedin.com/in/bishalmazumdar" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                </div>
+                    <div class="col-xs-12 ">
+                    <p align="center" style="color: white;">© Copyright 2015 Bishal Mazumdar</p>
+                    </div>
+                    
+            </div>
+        </div>
+    </footer>   </body>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
+</script>
+
+</html>
